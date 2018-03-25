@@ -26,22 +26,6 @@
             </div>
             <br>
 
-            <div id="everwrite_discussion"></div>
-            <script>
-                window.everwriteConfig = {
-                    communityId: '8b7a6680-bee8-4619-8cb9-fa7b4844bb26',
-                    discussionId: '{{ .LinkTitle }}', // Update this to use your own page identifier
-                    canonicalUrl: window.location.href // Update this to be this page's canonical URL
-                };
-
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://www.com.staging.everwrite.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-
             <div class="disqus">
                 {{ template "_internal/disqus.html" . }}
             </div>
